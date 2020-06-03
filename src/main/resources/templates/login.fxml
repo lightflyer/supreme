@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import ambm.login.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../static/login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ambm.login.LoginController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="153.0" layoutY="307.0" mnemonicParsing="false" onAction="#login" prefHeight="48.0" prefWidth="297.0" text="登录" />
+            <TextField fx:id="username" onMouseClicked="#clearText" layoutX="194.0" layoutY="140.0" prefHeight="44.0" prefWidth="256.0" text="用户名" />
+            <PasswordField fx:id="password" layoutX="194.0" layoutY="219.0" prefHeight="44.0" prefWidth="256.0" text="12346" />
+            <Label fx:id="mess" layoutX="150.0" layoutY="192.0" prefHeight="17.0" prefWidth="228.0" text="" />
+            <ImageView layoutX="166.0" layoutY="155.0">
+               <image>
+                  <Image url="@../static/icon/user.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="166.0" layoutY="234.0">
+               <image>
+                  <Image url="@../static/icon/password.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="151.0" layoutY="140.0" prefHeight="44.0" prefWidth="44.0" styleClass="inputBorder" />
+            <Label layoutX="152.0" layoutY="219.0" prefHeight="44.0" prefWidth="44.0" styleClass="inputBorder" />
+            <ImageView layoutX="263.0" layoutY="45.0">
+               <image>
+                  <Image url="@../static/init/Group3.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

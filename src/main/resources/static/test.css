@@ -1,0 +1,11 @@
+.radio{
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #999999;
+    -fx-border-radius: 10;
+}
+.combo-box-base{
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #999999;
+    -fx-background-insets: 0;
+    -fx-background-color: transparent, white, transparent, white;
+}

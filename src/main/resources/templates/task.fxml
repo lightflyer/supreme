@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import ambm.task.*?>
+<?import javafx.collections.FXCollections?>
+
+<AnchorPane prefHeight="553.0" prefWidth="1025.0" stylesheets="@../static/task.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ambm.task.TaskController">
+   <children>
+      <Pane layoutY="94.0" prefHeight="559.0" prefWidth="1031.0" styleClass="grayPane">
+         <children>
+            <Button layoutX="749.0" layoutY="512.0" mnemonicParsing="false" onAction="#addTask" prefHeight="36.0" prefWidth="268.0" styleClass="taskSaveButton" text="保存" />
+         </children>
+      </Pane>
+      <Pane layoutX="32.0" layoutY="105.0" prefHeight="493.0" prefWidth="994.0" styleClass="tablePane">
+         <children>
+            <Label layoutX="40.0" layoutY="40.0" text="支持网站" />
+            <ComboBox fx:id="websiteOption" layoutX="185.0" layoutY="28.0" onAction="#selectWebsite" prefHeight="44.0" prefWidth="268.0" promptText="palaces" />
+            <TabPane layoutX="1.0" layoutY="93.0" prefHeight="394.0" prefWidth="984.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="货品添加">
+                     <content>
+                         <Pane fx:id="goodsPane" prefHeight="367.0" prefWidth="984.0" />
+                     </content></Tab>
+                <Tab text="购买人信息添加">
+                     <content>
+                         <Pane fx:id="persionPane" />
+                     </content></Tab>
+                  <Tab text="代理添加">
+                     <content>
+                         <Pane fx:id="proxyPane" />
+                     </content></Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </Pane>
+      <ImageView layoutX="474.0" layoutY="23.0">
+         <image>
+            <Image url="@../static/init/Group3.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

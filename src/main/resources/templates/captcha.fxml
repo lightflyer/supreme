@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import ambm.captcha.*?>
+
+<?import com.teamdev.jxbrowser.chromium.javafx.BrowserView?>
+<AnchorPane prefHeight="514.0" prefWidth="414.0" stylesheets="@../static/captcha.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ambm.captcha.CaptchaController">
+   <children>
+      <Pane fx:id="pane" layoutX="-22.0" layoutY="151.0" prefHeight="736.0" prefWidth="414.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Line endX="300.0" layoutX="106.0" layoutY="46.0" startX="-100.0" />
+            <Button fx:id="loadGoogle" layoutX="154.0" layoutY="14.0" mnemonicParsing="false" onAction="#googleAction" text="加载google视频" />
+         </children>
+      </Pane>
+      <BrowserView fx:id="webView" layoutY="47.0" prefHeight="689.0" prefWidth="414.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="47.0" />
+   </children>
+</AnchorPane>

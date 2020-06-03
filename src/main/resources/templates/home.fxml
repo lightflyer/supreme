@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import ambm.home.*?>
+<?import javafx.collections.FXCollections?>
+<?import com.sun.javafx.scene.control.skin.TableHeaderRow?>
+
+<AnchorPane fx:id="root" prefHeight="580.0" prefWidth="957.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ambm.home.HomeController">
+    <children>
+        <Pane prefHeight="514.0" prefWidth="968.0" stylesheets="@../static/home.css" AnchorPane.bottomAnchor="267.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="312.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Pane layoutY="120.0" prefHeight="514.0" prefWidth="953.0">
+                    <children>
+                        <ScrollPane layoutX="17.0" layoutY="-13.0" prefHeight="381.0" prefWidth="919.0">
+                            <content>
+                                <TableView fx:id="taskTable" prefHeight="366.0" prefWidth="916.0">
+                                    <columns>
+                                        <TableColumn fx:id="id" prefWidth="43.0" text="ID" />
+                                        <TableColumn fx:id="firstName" prefWidth="102.0" text="FirstName" />
+                                        <!--<TableColumn fx:id="lashName" prefWidth="102.0" text="LastName" />-->
+                                        <TableColumn fx:id="size" prefWidth="102.0" text="SIZE" />
+                                        <TableColumn fx:id="keywords" prefWidth="240.0" text="关键词" />
+                                        <TableColumn fx:id="website" prefWidth="158.0" text="网站" />
+                                        <!--<TableColumn fx:id="proxy" prefWidth="91.0" text="是否启用代理" />-->
+                                        <!--<TableColumn fx:id="startCaptcha" prefWidth="107.0" text="是否启用验证码" />-->
+                                        <TableColumn fx:id="state" prefWidth="340.0" text="状态" />
+                                        <TableColumn fx:id="state1" prefWidth="189.0" text="状态" />
+                                    </columns>
+                                </TableView>
+                            </content>
+                        </ScrollPane>
+                        <Button fx:id="addTask" layoutX="27.0" layoutY="399.0" mnemonicParsing="false" onAction="#addTask" prefHeight="36.0" prefWidth="120" text="  新任务添加" />
+                        <Button fx:id="startAll" layoutX="179.0" layoutY="399.0" mnemonicParsing="false" onAction="#startAll" prefHeight="36.0" prefWidth="133.0" text="启动所有任务" />
+                        <Button fx:id="stopAll" layoutX="344.0" layoutY="399.0" mnemonicParsing="false" onAction="#stopAll" prefHeight="36.0" prefWidth="133.0" text="停止所有任务" />
+                        <Button layoutX="509.0" layoutY="399.0" mnemonicParsing="false" onAction="#captchaAction" prefHeight="36.0" prefWidth="128.0" text="验证码打码" />
+                        <Text fx:id="pubmess" layoutX="17.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="919.0" />
+                    </children>
+                </Pane>
+                <Hyperlink layoutX="811.0" layoutY="52.0" onAction="#setting" text="设置" />
+                <Hyperlink layoutX="889.0" layoutY="52.0" text="帮助" />
+                <ImageView layoutX="427.0" layoutY="34.0">
+                    <image>
+                        <Image url="@../static/init/Group3.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+AnchorPane {
+    -fx-background-color: #FFFFFF;
+    -fx-font-family: "PingFang SC";
+    -fx-text-fill: #2A2A2A;
+}
+Button{
+    -fx-font-family: "PingFang TC";
+    -fx-background-color:#FFFFFF;
+    -fx-border-color: #999999;
+    -fx-font-size: 13px;
+}
+Button:hover{
+    -fx-font-family: "PingFang TC";
+    -fx-background-color: #2A2A2A;
+    -fx-border-color: #2A2A2A;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 13px;
+}

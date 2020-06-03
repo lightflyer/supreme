@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import ambm.setting.*?>
+
+<AnchorPane prefHeight="378.0" prefWidth="522.0" stylesheets="@../static/setting.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ambm.setting.SettingController">
+   <children>
+      <Pane layoutX="158.0" layoutY="78.0" prefHeight="378.0" prefWidth="522.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="111.0" layoutY="24.0" styleClass="titleH" text="验证码代理设置" />
+            <Button layoutX="182.0" layoutY="309.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="229.0" onAction="#save" text="保存" />
+            <CheckBox layoutX="111.0" layoutY="323.0" mnemonicParsing="false" text="启用" fx:id="startProxy" />
+         </children>
+      </Pane>
+      <TextField layoutX="111.0" layoutY="76.0" prefHeight="44.0" prefWidth="300.0" fx:id="ip" text="ip" />
+      <TextField layoutX="111.0" layoutY="128.0" prefHeight="44.0" prefWidth="300.0" fx:id="port" text="port" />
+      <TextField layoutX="111.0" layoutY="181.0" prefHeight="44.0" prefWidth="300.0" fx:id="proxyUsername" text="用户名"/>
+      <TextField layoutX="111.0" layoutY="233.0" prefHeight="44.0" prefWidth="300.0" fx:id="proxyPassword" text="密码" />
+   </children>
+</AnchorPane>

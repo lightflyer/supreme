@@ -1,0 +1,65 @@
+AnchorPane {
+    -fx-background-color: #FFFFFF;
+    -fx-font-family: "PingFang SC";
+    -fx-text-fill: #2A2A2A;
+}
+Button{
+    -fx-font-family: "PingFang TC";
+    -fx-background-color:#FFFFFF;
+    -fx-border-color: #999999;
+    -fx-font-size: 13px;
+}
+Button:hover{
+    -fx-font-family: "PingFang TC";
+    -fx-background-color: #2A2A2A;
+    -fx-border-color: #2A2A2A;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 13px;
+}
+.grayPane{
+    -fx-background-color: #F0F0F0;
+}
+.tablePane{
+    -fx-background-color: #FFFFFF;
+}
+.taskSaveButton{
+    -fx-font-family: "PingFang TC";
+    -fx-background-color: #2A2A2A;
+    -fx-border-color: #2A2A2A;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 13px;
+}
+.tab-header-background{
+    -fx-background-color: #2A2A2A;
+    -fx-pref-height: 48px;
+}
+.tab{
+    -fx-background-color: #2A2A2A;
+}
+.tab-label{
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "PingFang HK";
+    -fx-font-size: 15px;
+}
+.text-field{
+    -fx-border-color: #999999;
+    -fx-background-radius:0 0 0 0;
+    -fx-background-insets: 0;
+    -fx-background-color: transparent, white, transparent, white;
+}
+.box{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius:0 0 0 0;
+    -fx-border-color:#999999;
+}
+.radio{
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #999999;
+    -fx-border-radius: 10;
+}
+.combo-box-base{
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #999999;
+    -fx-background-insets: 0;
+    -fx-background-color: transparent, white, transparent, white;
+}

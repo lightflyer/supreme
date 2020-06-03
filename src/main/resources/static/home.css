@@ -1,0 +1,54 @@
+AnchorPane {
+    -fx-background-color: #FFFFFF;
+    -fx-font-family: "PingFang SC";
+}
+Hyperlink{
+    -fx-font-family: "PingFang TC";
+    -fx-font-size: 15px;
+    -fx-text-fill: #2A2A2A;
+}
+
+.column-header .label{
+    -fx-font-family: "PingFang SC";
+    -fx-background-color: #2A2A2A;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 15px;
+    -fx-pref-height: 46px;
+}
+
+.column-header{
+    -fx-font-family: "PingFang SC";
+    -fx-background-color: #2A2A2A;
+    -fx-pref-height:46px;
+}
+TableColumn{
+    -fx-text-fill: #FFFFFF;
+}
+TableView{
+    -fx-border-color: #FFFFFF;
+    -fx-background-insets: 0;
+    -fx-background-color: transparent, white, transparent, white;
+}
+Button{
+    -fx-font-family: "PingFang TC";
+    -fx-background-color:#FFFFFF;
+    -fx-border-color: #999999;
+    -fx-font-size: 13px;
+}
+Button:hover{
+    -fx-font-family: "PingFang TC";
+    -fx-background-color: #2A2A2A;
+    -fx-border-color: #2A2A2A;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 13px;
+}
+.text-field{
+    -fx-border-color: #999999;
+    -fx-background-radius:0 0 0 0;
+    -fx-background-insets: 0;
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+
+
+

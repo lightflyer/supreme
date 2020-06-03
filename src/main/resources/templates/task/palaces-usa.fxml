@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import ambm.task.palaces_usa.*?>
+
+<AnchorPane prefHeight="606.0" prefWidth="956.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ambm.task.palaces_usa.PalacesUSATaskController">
+   <children>
+      <Pane fx:id="persionPane" prefHeight="606.0" prefWidth="956.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <GridPane layoutX="38.0" layoutY="89.0" prefHeight="269.0" prefWidth="381.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.0" minWidth="10.0" prefWidth="112.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="269.0" minWidth="10.0" prefWidth="269.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="FirstName" />
+                  <TextField fx:id="firstName" text="FirstName" GridPane.columnIndex="1" />
+                  <TextField fx:id="lastName" text="LastName," GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="email" text="Email" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="address" text="Address" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="apartment" text="Apartment," GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="city" text="city" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="postCode" text="Postcode" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <TextField fx:id="phone" text="phone" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <Label text="LastName," GridPane.rowIndex="1" />
+                  <Label text="Email" GridPane.rowIndex="2" />
+                  <Label text="Address" GridPane.rowIndex="3" />
+                  <Label text="Apartment, suite, etc. (optional)" GridPane.rowIndex="4" />
+                  <Label text="city" GridPane.rowIndex="5" />
+                  <Label text="Country" GridPane.rowIndex="6" />
+                  <Label text="Postcode" GridPane.rowIndex="8" />
+                  <Label text="phone" GridPane.rowIndex="9" />
+                  <ComboBox fx:id="country"  onAction="#selectCountry" prefHeight="27.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <ComboBox fx:id="countyState"  prefHeight="27.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Label text="state" GridPane.rowIndex="7" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="474.0" layoutY="78.0" prefHeight="164.0" prefWidth="380.0">
+               <children>
+                  <Label text="CardNumber" />
+                  <TextField fx:id="cardNumber" text="CardNumber" GridPane.columnIndex="1" />
+                  <TextField fx:id="cardHolderName" text="CardHolder Name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="MMYY" text="MM/YYYY" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="CVV" text="CVV" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="CardHolder Name" GridPane.rowIndex="1" />
+                  <Label text="MM/YY" GridPane.rowIndex="2" />
+                  <Label text="CVV" GridPane.rowIndex="3" />
+                  <RadioButton fx:id="savePerson" mnemonicParsing="false" prefHeight="17.0" prefWidth="139.0" text="保存信息" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.0" minWidth="10.0" prefWidth="112.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="269.0" minWidth="10.0" prefWidth="269.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <ComboBox fx:id="historyPerson" layoutX="145.0" layoutY="416.0" onAction="#selectPerson" prefHeight="27.0" prefWidth="273.0" />
+            <Label layoutX="28.0" layoutY="421.0" text="历史信息" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

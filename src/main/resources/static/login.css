@@ -1,0 +1,23 @@
+AnchorPane {
+    -fx-background-color: #FFFFFF;
+    -fx-font-family: "PingFang SC";
+}
+Button{
+    -fx-background-color: #2A2A2A;
+    -fx-font-size: 17pt;
+    -fx-text-fill: #FFFFFF;
+}
+#mess{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #C04D4D;
+    -fx-font-size: 13pt;
+}
+.text-field{
+    -fx-border-color: #999999 #999999 #999999 #FFFFFF;
+    -fx-background-radius:0 0 0 0;
+    -fx-background-insets: 0;
+    -fx-background-color: transparent, white, transparent, white;
+}
+.inputBorder{
+    -fx-border-color: #999999 #FFFFFF #999999 #999999;
+}

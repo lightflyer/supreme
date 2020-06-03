@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import ambm.goods.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="606.0" prefWidth="956.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ambm.goods.GoodsController">
+   <children>
+       <Pane prefHeight="546.0" prefWidth="956.0">
+           <children>
+               <TextField fx:id="keywords" layoutX="161.0" layoutY="78.0" text="keywords" />
+               <Label layoutX="75.0" layoutY="83.0" text="关键词添加" />
+               <Label layoutX="75.0" layoutY="131.0" text="SIZE" />
+               <Label layoutX="75.0" layoutY="182.0" text="备用SIZE" />
+               <RadioButton fx:id="fuzzyMatch" layoutX="352.0" layoutY="83.0" mnemonicParsing="false"  text="接受模糊匹配，挑选和关键词最像的一个" />
+               <RadioButton fx:id="newGoods" layoutX="625.0" layoutY="83.0" mnemonicParsing="false" text="新品" />
+               <Text layoutX="352.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="如果第一个size没匹配到,匹配第二个" />
+               <ComboBox fx:id="size" layoutX="161.0" layoutY="126.0" prefHeight="27.0" prefWidth="169.0" />
+               <ComboBox fx:id="backupSize" layoutX="160.0" layoutY="177.0" prefHeight="27.0" prefWidth="169.0" />
+               <RadioButton fx:id="startCaptcha" layoutX="688.0" layoutY="83.0" mnemonicParsing="false" text="启用验证码" />
+           </children>
+       </Pane>
+   </children>
+</AnchorPane>

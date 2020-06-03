@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+    <title>reCAPTCHA demo: Explicit render for multiple widgets</title>
+    <script src="/jquery.min.js" ></script>
+    <script type="text/javascript" th:inline="javascript" >
+        history.pushState;
+        $(function () {
+            setInterval(function(){
+                var hours = new Date().getHours();
+                var minutes = new Date().getMinutes();
+                var seconds = new Date().getSeconds();
+                if(hours<10){
+                    hours = '0'+hour;
+                }
+                if(minutes<10){
+                    minutes = '0'+minutes;
+                }
+                if(seconds<10){
+                    seconds = '0'+seconds;
+                }
+                $('.time').text(hours+":"+minutes+":"+seconds);
+            },1000)
+        })
+        function getFormatDate(){
+            var nowDate = new Date();
+            var year = nowDate.getFullYear();
+            var month = nowDate.getMonth() + 1 < 10 ? "0" + (nowDate.getMonth() + 1) : nowDate.getMonth() + 1;
+            var date = nowDate.getDate() < 10 ? "0" + nowDate.getDate() : nowDate.getDate();
+            var hour = nowDate.getHours()< 10 ? "0" + nowDate.getHours() : nowDate.getHours();
+            var minute = nowDate.getMinutes()< 10 ? "0" + nowDate.getMinutes() : nowDate.getMinutes();
+            var second = nowDate.getSeconds()< 10 ? "0" + nowDate.getSeconds() : nowDate.getSeconds();
+            return hour+":"+minute+":"+second;
+        }
+        var sum=1;
+        var sitekey=[[${captchaKey}]];
+        var taskId=[[${taskId}]];
+        var verifyCallback = function(response) {
+            if(response==null||response==''||response=='undefined'||response==undefined){
+                grecaptcha.reset(widgetId3);
+            }else{
+                $.ajax({
+                    url:'/recaptcha?response='+response+'&captchaKey='+sitekey+'&taskId='+taskId,
+                    data:response,
+                    type:'post',
+                    success:function(){
+                       // alert(">>>111");
+                        sitekey='';
+                        grecaptcha.reset(widgetId3);
+                        // $("p").html("<H3>"+getFormatDate()+">>第"+(sum++)+"个成功马上下一个</h3>");
+                    }
+                })
+            }
+        };
+        var onloadCallback = function() {
+            widgetId3 = grecaptcha.render(document.getElementById('example3'), {
+                //'sitekey' : '6LeWwRkUAAAAAOBsau7KpuC9AV-6J8mhw4AjC3Xz',//supreme 的
+                'sitekey' : sitekey,//我自己的
+                'callback' : verifyCallback,
+                'theme' : 'dark'
+            });
+        };
+
+    </script>
+</head>
+<body>
+<!--<button type="button" onclick="grecaptcha.reset(widgetId3)" style="font-size: 14px;font-weight: bold;margin-left:230px;margin-top: 23px;">&nbsp;&nbsp;刷新&nbsp;&nbsp;</button>-->
+<div style="margin-top: 23px;">&nbsp;</div>
+<h1 style="margin-left:50px;margin-top: -35px;" class="time" ></h1>
+<!-- POSTs back to the page's URL upon submit with a g-recaptcha-response POST parameter. -->
+<form action="/recaptcha" method="POST">
+    <div id="example3"></div>
+    <br>
+    <p></p>
+
+</form>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+</script>
+</body>
+</html>
