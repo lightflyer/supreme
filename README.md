@@ -1,4 +1,4 @@
-# supremeBot，nikeBot，抢鞋bot，palaceBot
+# supremeBot，nikeBot，抢鞋bot，palaceBot 技术交流QQ:1145413335
 supreme nike
 ## 背景：
 
