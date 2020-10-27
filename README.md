@@ -1,5 +1,5 @@
-# supremeBot，nikeBot，抢鞋bot，palaceBot 技术交流QQ:1145413335
-supreme nike
+# supremeBot，nikeBot，抢鞋bot，palaceBot 
+supreme nike 技术交流QQ:1145413335
 ## 背景：
 
 ​           随着潮鞋、潮牌的风靡、本程序员准备入手一套supreme，palace、nike；耐于总是抢不到，无奈之下耗时N久，准备手写一套抢购supreme nike palace的工具；从此开始了漫漫长路....；
