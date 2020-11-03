@@ -14,9 +14,6 @@ supreme nike 技术交流QQ:1145413335
 | palace      | 支持             | 支持             |
 
 
-
-### [获取详细研发部署文档](http://www.hxdwe.cn:8001/product/supreme)
-
 ### **软件功能支持：**
 
 | 功能                                                         | 是否支持 |
