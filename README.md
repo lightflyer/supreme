@@ -95,5 +95,16 @@ ps:目前这个基本上已经达到商业的级别；
 未经授权不得商业、源码仅供交流学习使用；
 
 源码本身已经包含了核心代码，交流学习已经够用了；
+-----------------------------------------------
+下面晒一些nike bot 的东西；
+![Bcmw0U.png](https://s1.ax1x.com/2020/11/04/Bcmw0U.png)
+![BcmUXV.png](https://s1.ax1x.com/2020/11/04/BcmUXV.png)
+![Bcmtlq.png](https://s1.ax1x.com/2020/11/04/Bcmtlq.png)
+![BcmN60.png](https://s1.ax1x.com/2020/11/04/BcmN60.png)
+![BcmdmT.png](https://s1.ax1x.com/2020/11/04/BcmdmT.png)
+![Bcm07F.png](https://s1.ax1x.com/2020/11/04/Bcm07F.png)
+
+QQ:80258153
+
 
 
